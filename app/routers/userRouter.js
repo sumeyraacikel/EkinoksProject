@@ -20,7 +20,7 @@ module.exports = function(app) {
 
   app.get(
     "/api/test/customer",
-    [authJwt.verifyToken, authJwt.isModerator],
+    [authJwt.verifyToken, authJwt.isCustomer],
     controller.moderatorBoard
   );
 
