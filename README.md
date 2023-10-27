@@ -29,3 +29,7 @@ Used technologies
 #### Register and Login endpoints for Admins Authentication (for ex. bearer token):
 
 ![postman.png](postman.png)
+
+#### ERD table:
+
+![erd.png](erd.png)
