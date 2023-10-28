@@ -40,6 +40,7 @@ exports.signup = (req, res) => {
     });
 };
 
+//Giriş yapılacak
 exports.signin = (req, res) => {
   User.findOne({
     where: {

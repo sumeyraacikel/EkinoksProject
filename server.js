@@ -12,13 +12,13 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-// parse requests of content-type - application/json
+// içerik türünün ayrıştırılması - application/json
 app.use(express.json());
 app.use('/customers', customerRouter)
 app.use('/products', productRouter)
 app.use('/orders', orderRouter)
 
-// parse requests of content-type - application/x-www-form-urlencoded
+// İçerik türünün ayrıştırılması - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
 // database
@@ -26,7 +26,7 @@ const db = require("./app/models");
 const Role = db.role;
 
 // db.sequelize.sync();
-// force: true will drop the table if it already exists
+// force: true eğer mevcutsa tablo oluşmayacak
 db.sequelize.sync({force: true}).then(() => {
   console.log('Drop and Resync Database with { force: true }');
   initial();
