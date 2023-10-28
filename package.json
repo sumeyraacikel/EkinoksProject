@@ -1,7 +1,7 @@
 {
-  "name": "node-js-jwt-auth-postgresql",
+  "name": "ekinoks-project",
   "version": "1.0.0",
-  "description": "Node.js Demo for JWT Authentication with PostgreSQL",
+  "description": "Node.js Demo ",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
     "authentication",
     "postgresql"
   ],
-  "author": "bezkoder",
+  "author": "smeyra",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
